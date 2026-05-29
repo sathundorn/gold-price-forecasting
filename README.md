@@ -22,10 +22,23 @@ This project evaluates and compares multiple forecasting models:
 ## 📂 Repository Structure
 ```text
 gold-price-forecasting/
-├── data/
-│   └── final_data.csv
-├── notebooks/
-│   ├── 01_XGboost_gold_6_ตัวแปร.ipynb
-│   └── 02_Chronos.ipynb
-├── requirements.txt
+├── final_data.csv
+├── Chornos.ipynb
+├── XGboost_gold_6_ตัวแปร.ipynb
 └── README.md
+
+## 📈 Results & Evaluation
+
+In this study, we evaluated four modeling approaches for gold price prediction. Performance metrics used for evaluation include **MAPE (Mean Absolute Percentage Error)**, **RMSE (Root Mean Squared Error)**, **MAE (Mean Absolute Error)**, and **Direction Accuracy**.
+
+| Model | MAPE (%) | RMSE | MAE | Direction Accuracy (%) |
+| :--- | :--- | :--- | :--- | :--- |
+| **XGBoost** | **0.83** | **43.93** | **24.92** | 61.76 |
+| ARIMA-ElasticNet | 1.28 | 79.23 | 39.47 | **65.06** |
+| Chronos | 2.03 | 147.40 | 99.67 | 37.83 |
+| LSTM | 2.63 | 135.45 | 81.39 | 54.52 |
+
+### 🏆 Conclusion
+Based on the evaluation using the test set, the **XGBoost** model achieved the best overall performance with the lowest MAPE value of **0.83%**, indicating the highest prediction accuracy among all tested models. 
+
+These results suggest that the gradient boosting framework of XGBoost is highly effective at capturing the complex, non-linear patterns and volatility inherent in gold price data. Therefore, XGBoost is identified as the most suitable model for gold price prediction in this study.
