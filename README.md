@@ -23,11 +23,9 @@ This project evaluates and compares multiple forecasting models:
 ```text
 gold-price-forecasting/
 ├── data/
-│   └── monthly_gold_prices.csv
+│   └── final_data.csv
 ├── notebooks/
-│   ├── 01_eda_and_preprocessing.ipynb
-│   ├── 02_arima_model.ipynb
-│   ├── 03_lstm_model.ipynb
-│   └── 04_chronos_model.ipynb
+│   ├── 01_XGboost_gold_6_ตัวแปร.ipynb
+│   └── 02_Chronos.ipynb
 ├── requirements.txt
 └── README.md
